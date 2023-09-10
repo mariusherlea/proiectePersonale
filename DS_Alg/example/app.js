@@ -1,12 +1,13 @@
 let nums = [2, 7, 11, 15, 23, 24, 25];
-let target = 9;
+let target = 17;
 
 function check(array, sum) {
   let small = 0;
   let large = array.length - 1;
-  let sumItermediar = array[small] + array[large];
-  console.log(`sumItermediar intial: ${sumItermediar}`);
+
   do {
+    let sumItermediar = array[small] + array[large];
+    console.log(`sumItermediar intial: ${sumItermediar}`);
     if (sumItermediar < sum) {
       small++;
       let sumItermediar = array[small] + array[large];
@@ -17,8 +18,7 @@ function check(array, sum) {
       let sumItermediar = array[small] + array[large];
       console.log(`large decreased ${large} small stay ${small}`);
       console.log(`sumItermediar: ${sumItermediar}`);
-    }
-    else (sumItermediar == sum) {
+    } else {
       console.log(small, large);
       break;
     }
