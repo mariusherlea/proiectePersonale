@@ -1,5 +1,5 @@
 let nums = [2, 7, 11, 15, 23, 24, 25];
-let target = 25;
+let target = 50;
 
 function checkIfElementOfArraySum(array, sum) {
   let smallestIndexOfArray = 0;
