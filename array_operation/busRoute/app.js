@@ -30,21 +30,25 @@ const result = array.reduce((resultArray, item, index) => {
   return resultArray;
 }, []);
 
-console.log(result[1][1]);
-console.log(result[0]);
-
-for (let i = 0; i < 2; i++) {
-  let indexStart = result[i].findIndex((Object) => {
-    return Object.stop === "AlbaIulia";
-  });
-  let indexFinish = result[i].findIndex((Object) => {
-    return Object.stop === "Cugir";
-  });
-  if (indexStart < indexFinish) {
-    console.log(indexStart, indexFinish, result[i]);
+// console.log(result[1][1]);
+// console.log(result[0]);
+const establishSens = (result) => {
+  for (let i = 0; i < 2; i++) {
+    let indexStart = result[i].findIndex((Object) => {
+      return Object.stop === "Vint";
+    });
+    let indexFinish = result[i].findIndex((Object) => {
+      return Object.stop === "Sibot";
+    });
+    if (indexStart < indexFinish) {
+      // console.log(indexStart, indexFinish, result[i]);
+      return result[i];
+    }
   }
-}
+};
 
-document.getElementById("list").innerHTML = JSON.stringify(array);
+document.getElementById("list").innerHTML = JSON.stringify(
+  establishSens(result)
+);
 // console.log(array[(0, 1)]);
 // console.log(array[(0, 0)]);
