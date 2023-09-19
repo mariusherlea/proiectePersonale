@@ -50,7 +50,7 @@ const result = array.reduce((resultArray, item, index) => {
 // console.log(result[0]);
 const establishSens = (result) => {
   let x = 0;
-  var z = [];
+  let z = [];
   while (x < result.length) {
     let indexStart = result[x].findIndex((Object) => {
       return Object.stop === "VintuDeJos";
