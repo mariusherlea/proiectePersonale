@@ -53,10 +53,10 @@ const establishSens = (result) => {
   let z = [];
   while (x < result.length) {
     let indexStart = result[x].findIndex((Object) => {
-      return Object.stop === "VintuDeJos";
+      return Object.stop === "AlbaIulia";
     });
     let indexFinish = result[x].findIndex((Object) => {
-      return Object.stop === "Sibot";
+      return Object.stop === "Cugir";
     });
     if (indexStart < indexFinish) {
       console.log(indexStart, indexFinish, result[x]);

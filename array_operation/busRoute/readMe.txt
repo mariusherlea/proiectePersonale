@@ -1,0 +1,1 @@
+I used a series of objects to establish the direction of travel relevant for a traveler on the route of some buses that go between 2 terminus stations with intermediate stations.
